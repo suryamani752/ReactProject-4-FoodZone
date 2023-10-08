@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SearchResult from "./components/SearchResults/SearchResult";
 
-export const BASE_URL = "http://localhost:9000";
+// export const BASE_URL = "http://localhost:9000";
+export const BASE_URL = "https://food-zone-z8yw.onrender.com/";
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -154,7 +155,8 @@ const FilterContainer = styled.section`
 
 export const Button = styled.button`
   background: ${({ isSelected }) => (isSelected ? "green" : "#ff4343")};
-  outline: 1px solid ${({ isSelected }) => (isSelected ? "transparent" : "#ff4343")};
+  outline: 1px solid
+    ${({ isSelected }) => (isSelected ? "transparent" : "#ff4343")};
   border-radius: 5px;
   padding: 6px 12px;
   border: none;
